@@ -3,6 +3,7 @@ import {Options} from 'sortablejs';
 
 @Component({
   selector: 'app-child-component',
+  standalone: false,
   templateUrl: './child-component.component.html',
   styleUrls: ['./child-component.component.css'],
 })

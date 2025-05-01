@@ -12,12 +12,14 @@ import { SortableWithOptionsComponent } from './sortable-with-options/sortable-w
     CommonModule,
     SortablejsModule,
     ReactiveFormsModule,
+    MultipleListsComponent,
+    SortableWithOptionsComponent,
+    SimpleSortableComponent,
+    SortableFormArrayComponent,
   ],
   declarations: [
-    SimpleSortableComponent,
-    SortableWithOptionsComponent,
-    SortableFormArrayComponent,
-    MultipleListsComponent,
+
+
   ],
 })
 export class ExamplesModule { }

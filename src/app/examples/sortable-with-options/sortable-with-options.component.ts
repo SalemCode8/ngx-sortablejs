@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
 import {Options} from 'sortablejs';
+import {SortablejsDirective} from 'ngx-sortablejs';
+import {JsonPipe, NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-sortable-with-options',
   templateUrl: './sortable-with-options.component.html',
   styleUrls: ['./sortable-with-options.component.css'],
+  imports: [
+    SortablejsDirective,
+    NgForOf,
+    JsonPipe
+  ]
 })
 export class SortableWithOptionsComponent {
 

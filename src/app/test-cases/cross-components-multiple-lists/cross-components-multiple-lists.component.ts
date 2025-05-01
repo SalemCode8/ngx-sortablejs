@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cross-components-multiple-lists',
+  standalone: false,
   templateUrl: './cross-components-multiple-lists.component.html',
   styleUrls: ['./cross-components-multiple-lists.component.css'],
 })
