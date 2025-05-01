@@ -22,5 +22,6 @@
     "@angular/core": "^17.0.0",
     "sortablejs": ">=1.7.0"
   },
-  "main": "src/public-api.ts"
+  "main": "src/public-api.ts",
+  "version": "1.0.0"
 }
