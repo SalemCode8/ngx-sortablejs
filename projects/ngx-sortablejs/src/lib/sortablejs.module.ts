@@ -1,4 +1,4 @@
-import {ModuleWithProviders, NgModule} from '@angular/core';
+import {ModuleWithProviders, NgModule, Provider} from '@angular/core';
 import {GLOBALS} from './globals';
 import {SortablejsDirective} from './sortablejs.directive';
 import {Options} from 'sortablejs';
@@ -15,6 +15,13 @@ export class SortablejsModule {
       providers: [
         {provide: GLOBALS, useValue: globalOptions},
       ],
+    };
+  }
+
+  public static forChild(globalOptions: Options): Provider {
+    return {
+      provide: SortablejsModule,
+      useFactory: () => SortablejsModule.forRoot(globalOptions),
     };
   }
 
